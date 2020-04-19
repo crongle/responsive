@@ -1,0 +1,246 @@
+/*--------------------------------------------------------------------Reset---*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+/*--------------------------------------------------------------------Reset---*/
+html {
+  font-family: sans-serif;
+}
+/*-------------------------------------------------------------------Header---*/
+
+#navbar {
+  background: yellow;
+}
+
+#logo {
+  width: 200px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.horizontal-list {
+  display: none;
+}
+
+/*------------------------------------desktop*/
+@media (min-width: 768px) {
+  #logo {
+    display: inline;
+
+    margin: 0;
+  }
+
+  .horizontal-list {
+    display: inline;
+  }
+
+  .horizontal-list li {
+    display: inline-block;
+
+    padding-right: 30px;
+
+    list-style-type: none;
+  }
+}
+
+/*-------------------------------------------------------------------Core 3---*/
+#core3__container {
+  width: 100%;
+  clear: both;
+
+  background: black;
+}
+
+.box {
+  float: left;
+  background: red;
+  height: 20vh;
+  width: 100%;
+  padding: 5px;
+}
+
+.main-box {
+  height: 50vh;
+  width: 100%;
+}
+
+/*------------------------------------desktop*/
+@media (min-width: 768px) {
+  #core3__container {
+    float: left;
+
+    width: 100%;
+    height: 60vh;
+    max-height: 600px;
+  }
+
+  .box {
+    float: left;
+
+    height: 50%;
+    width: 33.3333%;
+    padding: 5px;
+  }
+
+  .main-box {
+    height: 100%;
+    width: 66.6666%;
+  }
+}
+/*--------------------------------------------------------------Main Container*/
+#main__container {
+  clear: both;
+
+  width: 100%;
+  padding: 10px
+}
+
+/*-------------------------------------desktop*/
+#main__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------Latest News*/
+#latest-news__container {
+  width: 100%;
+}
+
+#latest-news__container header {
+  width: 100%;
+}
+
+.article__container {
+  display: flex;
+
+  box-sizing: content-box;
+  height: 20vh;
+  min-height: 80px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.article__img {
+  height: 100%;
+  width: 20vh;
+
+  background: grey;
+}
+
+.article__text {
+  width: 100%;
+
+  background: blue;
+}
+
+/*-------------------------------------desktop*/
+@media (min-width: 768px) {
+  #latest-news__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #latest-news__container header {
+    padding-left: 10px;
+  }
+
+  .article__container {
+    display: block;
+
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .article__img {
+    height: 55%;
+    width: 100%;
+  }
+
+  .article__text {
+    height: 45%;
+  }
+}
+
+/*----------------------------------------------------------------Funding News*/
+#funding-news__container {
+  width: 100%;
+}
+
+#funding-news__container header {
+  width: 100%;
+}
+
+#funding-news__container .article {
+  position: relative;
+
+  box-sizing: content-box;
+  height: 40vh;
+  min-height: 160px;
+  width: 100%;
+  padding-bottom: 20px;
+
+  background: #fffaf8;
+}
+
+.logo {
+  width: auto;
+  position: absolute;
+  height: inherit;
+  transform: translateY(-50%);
+  margin-left: 2vh;
+
+
+  background: white;
+}
+
+.company {
+  box-sizing: content-box;
+  height: 12.5%;
+  padding-top: 2vh;
+
+  background: #f42;
+}
+
+.funding {  padding-left: 10px;
+  height: 25%;
+
+  background: rgba(255,68,34,.08);
+}
+
+.details, .caption {
+  height: 30%
+}
+
+.caption {
+  border-top: 1px solid rgba(255,68,34,0.25);
+}
+
+/*-------------------------------------desktop*/
+@media (min-width: 768px) {
+  #funding-news__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+  }
+
+  #funding-news__container header {
+    padding-left: 10px;
+  }
+
+  #funding-news__container .article {
+    display: block;
+
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    padding: 10px;
+  }
+
+}
